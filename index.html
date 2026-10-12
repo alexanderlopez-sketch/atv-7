@@ -2,27 +2,87 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu site Versão 4</title>
     <style>
-        body {
-            background: #7b2cbf;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: white;
-            padding-top: 100px;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            margin: 5rem 0;
-            color: #7b2cbf;
+        body {
+            background-color: #7b2cbf;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
         }
         .emoji {
-            font-size: 5rem;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            color: #7b2cbf;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        p.subtitle {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        .info-box {
+            background: #f1f3f5;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.85rem;
+            color: #495057;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .info-box span.code {
+            background: #e9ecef;
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.2rem;
+            font-family: monospace;
+        }
+        footer {
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            font-size: 0.75rem;
+            color: #888;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
-    <div class="emoji">🥳</div>
-    <h1>Versão 4</h1>
-    <p>Site do Alexander, aluno de DevOps!</p>
+    <div class="card">
+        <div class="emoji">🥳</div>
+        <h1>Versão 4</h1>
+        <p class="subtitle">Site do Alexander, aluno de DevOps!</p>
+
+        <div class="info-box">
+            <div>🤖 <strong>Publicado pelo robô em:</strong> 12/10/2026 às 18:43</div>
+            <div>🏷️ <strong>Commit:</strong> <span class="code">main</span></div>
+            <div>👤 <strong>Enviado por:</strong> alexanderlopez-sketch</div>
+        </div>
+
+        <footer>
+            🎓 UNINOVE - Automação de Processos - DevOps<br>
+            Prof. Marcelino Dias da Silva
+        </footer>
+    </div>
 </body>
 </html>
